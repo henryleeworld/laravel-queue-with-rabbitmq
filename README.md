@@ -1,4 +1,4 @@
-# Laravel 9 RabbitMQ 隊列
+# Laravel 10 RabbitMQ 隊列
 
 引入 vladimir-yuldashev 的 laravel-queue-rabbitmq 套件來擴增 RabbitMQ 隊列，RabbitMQ 基本上是類似郵局的概念，只要確保你有信箱他就一定把信送到你家，如果你有服務需要等待某件事情做完，並確保順序拿到該資料往下做事，那基本上你相當適合使用。
 
@@ -28,12 +28,13 @@ $ php artisan user:job
 ```sh
 $ php artisan rabbitmq:consume
 ```
+> 注意：必須啟用 Socket 擴充套件，Socket 是應用層與 TCP/IP 協議通信的中間軟體抽象層，它是一組介面。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/gFnKFNJ.png)
+![](https://i.imgur.com/zuA0Rso.png)
 > 推送隨機一筆使用者資料任務到隊列
 
-![](https://i.imgur.com/azi8mzf.png)
+![](https://i.imgur.com/qArM8Ml.png)
 > 消費隊列將結果輸出
