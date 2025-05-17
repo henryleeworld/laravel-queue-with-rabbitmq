@@ -1,4 +1,4 @@
-# Laravel 11 RabbitMQ 隊列
+# Laravel 12 RabbitMQ 隊列
 
 引入 vladimir-yuldashev 的 laravel-queue-rabbitmq 套件來擴增 RabbitMQ 隊列，RabbitMQ 基本上是類似郵局的概念，只要確保你有信箱他就一定把信送到你家，如果你有服務需要等待某件事情做完，並確保順序拿到該資料往下做事，那基本上你相當適合使用。
 
@@ -34,8 +34,8 @@ $ php artisan rabbitmq:consume
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/ulqVv8J.png)
+![](https://i.imgur.com/H7t3i4y.png)
 > 推送隨機一筆使用者資料任務到隊列
 
-![](https://i.imgur.com/6Yj5kjU.png)
+![](https://i.imgur.com/awlzbUV.png)
 > 消費隊列將結果輸出
