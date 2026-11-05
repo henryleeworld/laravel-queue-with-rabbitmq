@@ -12,14 +12,12 @@ class UserCreated implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    private $data;
-
     /**
      * Create a new job instance.
      */
-    public function __construct($data)
+    public function __construct(private $data)
     {
-        $this->data = $data;
+        //
     }
 
     /**
